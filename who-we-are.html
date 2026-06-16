@@ -55,6 +55,13 @@
   .hero-band{position:absolute;top:0;right:0;width:300px;height:100%;opacity:0.05;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%232E5BC9' stroke-width='1.2'%3E%3Cpath d='M40 4 L52 16 L52 32 L40 44 L28 32 L28 16 Z'/%3E%3Cpath d='M40 4 L40 -8 M52 16 L64 12 M52 32 L64 36 M40 44 L40 56 M28 32 L16 36 M28 16 L16 12'/%3E%3C/g%3E%3C/svg%3E");}
 
   section.block{padding:1.6rem 0;}
+  .short-bio{padding:1.6rem 0 0.5rem;}
+  .short-bio p{font-family:var(--serif);font-size:1.18rem;line-height:1.6;color:var(--ink);max-width:980px;margin-bottom:1.4rem;}
+  .short-bio em{font-style:italic;}
+  .bio-cue{font-family:var(--serif);font-style:italic;font-size:1.08rem;color:var(--persian);margin-top:2.2rem;display:inline-flex;align-items:center;gap:0.5rem;}
+  .bio-cue .chev{font-style:normal;color:var(--persian);font-size:1.9rem;line-height:1;position:relative;top:2px;display:inline-block;animation:bioBob 1.4s ease-in-out infinite;}
+  @keyframes bioBob{0%,100%{transform:translateY(0);}50%{transform:translateY(5px);}}
+  @media (prefers-reduced-motion:reduce){.bio-cue .chev{animation:none;}}
   p.body{font-size:0.98rem;line-height:1.8;color:#33384a;margin-bottom:1.5rem;max-width:980px;}
   p.body:last-child{margin-bottom:0;}
   p.body em{font-style:italic;}
@@ -167,6 +174,12 @@
     <h1>Of everything you can engineer, trust is the hardest.</h1>
     <p class="sub">I've spent a career learning how.</p>
     <div class="whom"><span class="mono">Neda Parnian, PhD</span><span class="dot"></span><span class="role">Founder, Parseus AI</span></div>
+  </div></section>
+
+  <section class="short-bio"><div class="wrap">
+    <p>I grew up in Shiraz taking things apart to understand them, and I never stopped. That instinct carried me from being the first woman to teach engineering at my university, at twenty-five, to a career building and leading AI in the places that punish a wrong answer: mining and welding floors, the systems that keep unsafe images off online shopping, the factories that quietly make the electronics in your pocket. Everywhere I went, the same truth held, the technology was never the hard part. Trust was.</p>
+    <p>I started Parseus to build the kind of AI that earns that trust from the start, for the person facing a hard decision and the enterprise running a thousand of them. The name carries the idea: <em>Perseus</em>, the Greek hero who won not by force but with the right tool used wisely, and <em>Pars</em>, the old name for Persia, a land defined by craft. Parseus is both, and so is the work: AI that does the heavy lifting, shows your options, and leaves the decision to you.</p>
+    <p class="bio-cue">How I got here, the long way <span class="chev">&#9662;</span></p>
   </div></section>
 
   <div class="wrap"><div class="girih"><svg viewBox="0 0 80 80"><g fill="none" stroke="currentColor" stroke-width="1.4"><path d="M40 6 L54 18 L54 34 L40 46 L26 34 L26 18 Z"/><circle cx="40" cy="26" r="6"/></g></svg><span class="rule"></span></div></div>
