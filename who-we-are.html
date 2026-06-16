@@ -116,7 +116,7 @@
         <div class="navitem">
           <span class="navlabel">For people <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="./for-people.html">Maestro AI</a>
+            <a href="https://parseus-ai-inc.github.io/maestro-ai-backend/" target="_blank" rel="noopener">Maestro AI</a>
             <span class="disabled"><em>Personal Finance Advisor</em> <span class="soon">Summer 2026</span></span>
             <span class="disabled"><em>Health &amp; Wellness Coach</em> <span class="soon">Fall 2026</span></span>
             <span class="disabled"><em>Career Mentor</em> <span class="soon">Spring 2027</span></span>
@@ -134,27 +134,27 @@
         <div class="navitem">
           <span class="navlabel">Solutions <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="./index.html#manufacturing">Manufacturing</a>
-            <a href="./index.html#robotics">Robotics</a>
-            <a href="./index.html#ecommerce">e-Commerce</a>
-            <a href="./index.html#mining">Mining</a>
-            <a href="./index.html#construction">Construction</a>
+            <a href="./coming-soon.html">Manufacturing</a>
+            <a href="./coming-soon.html">Robotics</a>
+            <a href="./coming-soon.html">e-Commerce</a>
+            <a href="./coming-soon.html">Mining</a>
+            <a href="./coming-soon.html">Construction</a>
           </div>
         </div>
         <div class="navitem">
           <span class="navlabel">Consulting <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="./index.html#automation">Automation</a>
-            <a href="./index.html#digital-twin">Digital Twin</a>
-            <a href="./index.html#digital-transformation">Digital Transformation</a>
-            <a href="./index.html#agentic-ai-strategy">Agentic AI Strategy</a>
+            <a href="./coming-soon.html">Automation</a>
+            <a href="./coming-soon.html">Digital Twin</a>
+            <a href="./coming-soon.html">Digital Transformation</a>
+            <a href="./coming-soon.html">Agentic AI Strategy</a>
           </div>
         </div>
         <div class="navitem">
           <span class="navlabel active">About <span class="caret">▾</span></span>
           <div class="dropdown">
             <a href="./who-we-are.html" class="active">Who we are</a>
-            <a href="./what-we-do.html">What we do</a>
+            <a href="./coming-soon.html">What we do</a>
             <a href="mailto:info@parseus.ai">Contact us</a>
           </div>
         </div>
@@ -210,7 +210,7 @@
         <span class="colhead">Core Tech Role</span>
         <h4>Intel</h4>
         <div class="tag">Corporate</div>
-        <p>I watched what happens when research has to become scale, when something must work not once but a million times identically.</p>
+        <p>I turned research into scale, where something must work not once but a million times identically.</p>
       </div>
       <div class="cell r empty"></div>
 
@@ -219,7 +219,7 @@
         <span class="colhead">Core Tech Role</span>
         <h4>Amazon</h4>
         <div class="tag">Corporate</div>
-        <p>The margin for error nearly vanishes. The bar isn't whether something works, but whether it holds under relentless load.</p>
+        <p>I owned systems where the margin for error nearly vanishes, where the bar isn't whether something works, but whether it holds under relentless load.</p>
       </div>
       <div class="cell r">
         <svg class="gnode" viewBox="0 0 80 80"><g fill="var(--ivory)" stroke="currentColor" stroke-width="3"><path d="M40 8 L56 20 L56 38 L40 50 L24 38 L24 20 Z"/></g></svg>
@@ -234,7 +234,7 @@
         <span class="colhead">Core Tech Role</span>
         <h4>Summit</h4>
         <div class="tag">Manufacturing</div>
-        <p>One of the most complex environments there is, close enough to the floor to see an elegant idea collide with physical reality and have to survive it.</p>
+        <p>I took on one of the most complex environments there is, close enough to the floor to watch an elegant idea collide with physical reality. I led the work that had to survive that collision.</p>
       </div>
       <div class="cell r">
         <svg class="gnode" viewBox="0 0 80 80"><g fill="var(--ivory)" stroke="currentColor" stroke-width="3"><path d="M40 8 L56 20 L56 38 L40 50 L24 38 L24 20 Z"/></g></svg>
@@ -274,5 +274,31 @@
     <div class="foot-brand"><span class="pi">&Pi;</span>arseus AI</div>
     <div class="foot-meta">The courage of Perseus, the craft of Persia · info@parseus.ai</div>
   </div></footer></div>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bcd1e376c9b046f897496f2af0250541"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<!-- Link click tracking -->
+<script>
+(function(){
+  function track(name, props){
+    try{
+      if(window.__cfBeacon && typeof window.__cfBeacon.trackEvent === 'function'){
+        window.__cfBeacon.trackEvent(name, props);
+      } else if(navigator.sendBeacon){
+        var payload = JSON.stringify({n:name,p:props||{},u:location.pathname});
+        navigator.sendBeacon('https://cloudflareinsights.com/cdn-cgi/rum?', payload);
+      }
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a');
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    var label = (a.textContent || '').trim().slice(0,60);
+    track('link_click', {href:href, label:label, page:location.pathname});
+  }, true);
+})();
+</script>
+<!-- End link click tracking -->
 </body>
 </html>

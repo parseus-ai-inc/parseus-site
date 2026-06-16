@@ -137,7 +137,7 @@
         <div class="navitem">
           <span class="navlabel">For people <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="./for-people.html">Maestro AI</a>
+            <a href="https://parseus-ai-inc.github.io/maestro-ai-backend/" target="_blank" rel="noopener">Maestro AI</a>
             <span class="disabled"><em>Personal Finance Advisor</em> <span class="soon">Summer 2026</span></span>
             <span class="disabled"><em>Health &amp; Wellness Coach</em> <span class="soon">Fall 2026</span></span>
             <span class="disabled"><em>Career Mentor</em> <span class="soon">Spring 2027</span></span>
@@ -155,27 +155,27 @@
         <div class="navitem">
           <span class="navlabel">Solutions <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="#manufacturing">Manufacturing</a>
-            <a href="#robotics">Robotics</a>
-            <a href="#ecommerce">e-Commerce</a>
-            <a href="#mining">Mining</a>
-            <a href="#construction">Construction</a>
+            <a href="./coming-soon.html">Manufacturing</a>
+            <a href="./coming-soon.html">Robotics</a>
+            <a href="./coming-soon.html">e-Commerce</a>
+            <a href="./coming-soon.html">Mining</a>
+            <a href="./coming-soon.html">Construction</a>
           </div>
         </div>
         <div class="navitem">
           <span class="navlabel">Consulting <span class="caret">▾</span></span>
           <div class="dropdown">
-            <a href="#automation">Automation</a>
-            <a href="#digital-twin">Digital Twin</a>
-            <a href="#digital-transformation">Digital Transformation</a>
-            <a href="#agentic-ai-strategy">Agentic AI Strategy</a>
+            <a href="./coming-soon.html">Automation</a>
+            <a href="./coming-soon.html">Digital Twin</a>
+            <a href="./coming-soon.html">Digital Transformation</a>
+            <a href="./coming-soon.html">Agentic AI Strategy</a>
           </div>
         </div>
         <div class="navitem">
           <span class="navlabel">About <span class="caret">▾</span></span>
           <div class="dropdown">
             <a href="./who-we-are.html">Who we are</a>
-            <a href="./what-we-do.html">What we do</a>
+            <a href="./coming-soon.html">What we do</a>
             <a href="mailto:info@parseus.ai">Contact us</a>
           </div>
         </div>
@@ -203,7 +203,7 @@
   <div class="wrap">
     <section class="paths">
 
-      <a class="path people" href="./for-people.html">
+      <a class="path people" href="./coming-soon.html">
         <div class="path-top"><span class="path-num">1</span><span class="path-eyebrow">For people · B2C</span></div>
         <h2>Approach your life's biggest moments with clarity, and make decisions with confidence</h2>
         <p class="desc">Apps that get to know you: how you live, what you value, how much risk you're willing to take, and where you draw the line on "good enough." They do the digging and lay out your options clearly, so the choice that used to keep you up at night becomes one you can make with confidence. Less time deliberating, more time living.</p>
@@ -217,7 +217,7 @@
         <span class="enter">Explore the apps <span class="arrow">→</span></span>
       </a>
 
-      <a class="path builders" href="./for-builders.html">
+      <a class="path builders" href="./coming-soon.html">
         <div class="path-top"><span class="path-num">2</span><span class="path-eyebrow">For builders &amp; enterprises · B2B</span></div>
         <h2>One home for everything your business runs on. Where you decide based on fact, not hope.</h2>
         <p class="desc">Systems that keep a complete record of everything your business depends on: who's using it, how things have changed, who took action when needed, and whether the outcome can be trusted. Whether it's AI agents or lab protocols, they make sure everything is registered, every change versioned, and every action tracked. On top of that, any result can be reproduced when it counts, and every decision has the receipts behind it.</p>
@@ -251,7 +251,7 @@
       <div class="proof">
         <div class="pl">Proof · Shipped</div>
         <h3 class="proof-title">Maestro AI: every resume strong, every claim true</h3>
-        <p>Maestro AI is the principle made real. To find and apply for jobs, separate agents hunt down openings, draft resumes and cover letters for the jobs you choose to go after, fact-check every one of the claims, and measure each one against what the job actually asks for, then hand each one back to you. The work that used to eat your evenings, done. But every decision that matters stays with you: which jobs are worth pursuing, what your resume says, how your cover letter positions you, and whether to apply at all. <a href="./for-people.html">See it in action →</a></p>
+        <p>Maestro AI is the principle made real. To find and apply for jobs, separate agents hunt down openings, draft resumes and cover letters for the jobs you choose to go after, fact-check every one of the claims, and measure each one against what the job actually asks for, then hand each one back to you. The work that used to eat your evenings, done. But every decision that matters stays with you: which jobs are worth pursuing, what your resume says, how your cover letter positions you, and whether to apply at all. <a href="https://parseus-ai-inc.github.io/maestro-ai-backend/" target="_blank" rel="noopener">See it in action →</a></p>
       </div>
       <div class="section-tag">The AI drives. You hold the wheel.</div>
     </section>
@@ -274,5 +274,31 @@
       </div>
     </footer>
   </div>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bcd1e376c9b046f897496f2af0250541"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<!-- Link click tracking -->
+<script>
+(function(){
+  function track(name, props){
+    try{
+      if(window.__cfBeacon && typeof window.__cfBeacon.trackEvent === 'function'){
+        window.__cfBeacon.trackEvent(name, props);
+      } else if(navigator.sendBeacon){
+        var payload = JSON.stringify({n:name,p:props||{},u:location.pathname});
+        navigator.sendBeacon('https://cloudflareinsights.com/cdn-cgi/rum?', payload);
+      }
+    }catch(e){}
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a');
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    var label = (a.textContent || '').trim().slice(0,60);
+    track('link_click', {href:href, label:label, page:location.pathname});
+  }, true);
+})();
+</script>
+<!-- End link click tracking -->
 </body>
 </html>
